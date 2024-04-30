@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSACertificateClient", "RSACertificateClient.csproj", "{C8304DEA-3019-4645-812A-49A612A9841C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8304DEA-3019-4645-812A-49A612A9841C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8304DEA-3019-4645-812A-49A612A9841C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8304DEA-3019-4645-812A-49A612A9841C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8304DEA-3019-4645-812A-49A612A9841C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {990C8725-C1BF-4705-9D67-E08941151EAA}
+	EndGlobalSection
+EndGlobal
