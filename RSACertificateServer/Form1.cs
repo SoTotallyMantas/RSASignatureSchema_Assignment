@@ -51,16 +51,16 @@ namespace RSACertificate_Server
             BigInteger modulus = BigInteger.Parse(Modulustextbox.Text);
             BigInteger signature = BigInteger.Parse(Signaturetextbox.Text);
 
-            // Verify the signature
+           
             BigInteger signatureCheck = rsa.CheckSignatureRSA(exponent, modulus, signature);
 
-            // Convert the message to bytes using UTF-8 encoding
+            
             byte[] messageBytes = Encoding.UTF8.GetBytes(Messagerichbox.Text);
 
-            // Convert the message bytes to a BigInteger
+          
             BigInteger messageBigInt = new BigInteger(messageBytes);
 
-            // Compare the signature check with the message BigInteger
+           
             if (signatureCheck.Equals(messageBigInt))
             {
                 MessageBox.Show("Signature is Valid");
@@ -90,6 +90,16 @@ namespace RSACertificate_Server
             Qprime.Text = GeneratePrimeNumber.GeneratePrimeNumbers(512).ToString();
         }
 
-       
+        private async void SendData_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                await serversocket.SendData(serversocket.endpoints[0], this);
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

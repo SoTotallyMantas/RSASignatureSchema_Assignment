@@ -31,7 +31,7 @@ namespace RSACertificateClient
             try
             {
                 await client.Connection(ipendpoint, message, signature, publickey, modulus);
-                MessageBox.Show("Message sent");
+               
             }
             catch (Exception ex)
             {

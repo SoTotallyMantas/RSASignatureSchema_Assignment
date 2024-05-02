@@ -44,6 +44,7 @@
             label2 = new Label();
             CheckSignature = new Button();
             NewSignature = new Button();
+            SendData = new Button();
             SuspendLayout();
             // 
             // StartServer
@@ -183,11 +184,22 @@
             NewSignature.UseVisualStyleBackColor = true;
             NewSignature.Click += NewSignature_Click;
             // 
+            // SendData
+            // 
+            SendData.Location = new Point(106, 395);
+            SendData.Name = "SendData";
+            SendData.Size = new Size(75, 23);
+            SendData.TabIndex = 16;
+            SendData.Text = "Send Data";
+            SendData.UseVisualStyleBackColor = true;
+            SendData.Click += SendData_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(SendData);
             Controls.Add(NewSignature);
             Controls.Add(CheckSignature);
             Controls.Add(label2);
@@ -228,6 +240,7 @@
         private Label label2;
         private Button CheckSignature;
         private Button NewSignature;
+        private Button SendData;
 
         public TextBox Signaturetextbox1 { get => Signaturetextbox; set => Signaturetextbox = value; }
         public RichTextBox Messagerichbox1 { get => Messagerichbox; set => Messagerichbox = value; }
